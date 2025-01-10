@@ -1,0 +1,105 @@
+.cripto_info{
+    margin: 0 30px;
+    border: none;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.cripto_name{
+    text-transform: capitalize;
+    font-weight: bolder;
+    font-size: 3em;
+    margin-bottom: 0;
+}
+
+.info{
+    color: #fff;
+}
+
+.interval{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.interval select{
+    background-color: #242a3e;
+    border: none;
+    border-radius: 10px;
+    padding: 5px 15px;
+    color: white;
+    font-size: 15px;
+    text-transform: capitalize;
+}
+
+.interval select option{
+    background: #212138;
+    border: none;
+    outline: none;
+    text-transform: capitalize;
+}
+
+.interval select option:nth-child(odd){
+    background: #124578;
+    border: none;
+    outline: none;
+}
+
+.symbol{
+    color: rgb(175, 175, 175);
+}
+
+.info_important, .history{
+    padding: 20px 15px 20px 35px;
+    margin-top: 25px;
+    background-color: #212138;
+    margin-right: 15%;
+    border-radius: 15px;
+}
+
+.history{
+    margin-right: 0;
+}
+
+.info_important li{
+    padding-bottom: 15px;
+}
+
+.info_important li p{
+    color: skyblue;
+}
+
+.info_important li p span{
+    color: #fff;
+}
+
+.header_table th{
+    text-align: start;
+}
+
+.table{
+    width: 100%;
+}
+
+.date{
+    width: 66%;
+    border-right: 1px solid #212138;
+    color: skyblue;
+}
+
+.price{
+    color: greenyellow;
+}
+
+.cripto_table:nth-child(even){
+    background-color: #292a3e;
+    width: 100%;
+}
+
+.table td, .table th{
+    padding: 15px 0;
+}
+
+.table th, .table td{
+    padding-left: 10px;
+}

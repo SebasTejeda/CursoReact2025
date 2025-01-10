@@ -1,8 +1,9 @@
 import { useEffect, useState } from 'react'
-import viteLogo from '/vite.svg'
 import axios from 'axios'
+import Crypto from './cripto/Crypto.jsx'
+import './Cuadricula.css'
 
-function App() {
+function Cuadricula() {
 
   const API_URL = import.meta.env.VITE_API_URL
 
@@ -18,16 +19,17 @@ function App() {
   if(!criptos) return <span>Cargando...</span>
 
   return (
-    <>
+    <div className='app-container'>
       <h1>Lista de criptomonedas</h1>
-      <ul>
-        {criptos.map(({id, name, priceUsd}) => (
-          <li key={id}>Nombre: {name} Precio: {priceUsd}</li>))
+      <div className='grill'>
+        {criptos.map(({id, name, priceUsd, symbol, changePercent24Hr}) => (
+            <Crypto key={id} id={id} name={name} priceUsd={priceUsd} symbol={symbol} changePercent24Hr={changePercent24Hr} className='crypto'></Crypto>))
         }
-      </ul>
-    </>
+      </div>
+      
+    </div>
     
   )
 }
 
-export default App
+export default Cuadricula

@@ -1,0 +1,19 @@
+.main-menu li{
+    list-style: none;
+}
+
+.main-menu ul{
+    display: flex;
+    gap: 20px;
+    padding: 10px 15px;
+}
+
+.main-menu a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.main-menu{
+    border-bottom: 2px solid rgba(255, 255, 255, .5);
+    margin: 30px;
+}

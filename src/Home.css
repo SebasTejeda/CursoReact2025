@@ -1,0 +1,25 @@
+.home{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.welcome{
+    margin-bottom: 0;
+}
+
+.welcome_info{
+    margin: 15px 0;
+    color: rgb(200, 200, 200);
+    word-spacing: 5px;
+}
+
+.link_cripto{
+    text-decoration: none;
+    color: #212138;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 15px;
+}
+
