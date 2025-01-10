@@ -23,6 +23,7 @@ img{
 body{
     background: rgb(0, 15, 22);
     background: linear-gradient(#0f0c29, #302b63, #24243e);
+    margin-left: 30px;
 }
 
 h1{
